@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+
 @Component
 public class College {
 	@Value("${collegeName}")
@@ -24,6 +25,10 @@ public class College {
 
 	public void setTeacher(Teacher teacher) {
 		this.teacher = teacher;
+	}
+	
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
 	}
 
 	public void test() {
